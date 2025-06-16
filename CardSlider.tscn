@@ -1,0 +1,171 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqxwxo8q3c8yi"]
+
+[ext_resource type="Script" uid="uid://ctm8mcq12lpy3" path="res://CardSlider.gd" id="1_8y0rj"]
+[ext_resource type="Texture2D" uid="uid://r6y7j035v6f" path="res://images/1.jpg" id="2_k00mn"]
+
+[node name="CardSlider" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8y0rj")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -3.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15, 0.2, 0.3, 1)
+
+[node name="BackgroundTexture" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_k00mn")
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -24.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+
+[node name="ProfileButton" type="Button" parent="VBoxContainer/TopBar"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+text = "👤"
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CoinContainer" type="HBoxContainer" parent="VBoxContainer/TopBar"]
+layout_mode = 2
+
+[node name="CoinIcon" type="Label" parent="VBoxContainer/TopBar/CoinContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "💵"
+
+[node name="CoinLabel" type="Label" parent="VBoxContainer/TopBar/CoinContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "1200"
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/TopBar"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="GemContainer" type="HBoxContainer" parent="VBoxContainer/TopBar"]
+layout_mode = 2
+
+[node name="GemIcon" type="Label" parent="VBoxContainer/TopBar/GemContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "💎"
+
+[node name="GemLabel" type="Label" parent="VBoxContainer/TopBar/GemContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "367"
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="Button" parent="VBoxContainer/TopBar"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+text = "☰"
+
+[node name="CardArea" type="Control" parent="VBoxContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_default_cursor_shape = 6
+
+[node name="CardContainer" type="Control" parent="VBoxContainer/CardArea"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DotsContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+alignment = 1
+
+[node name="BottomNav" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+alignment = 1
+
+[node name="HomeButton" type="Button" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "🏠"
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="ScrollButton" type="Button" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "📜"
+
+[node name="Spacer5" type="Control" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="ClothesButton" type="Button" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "👕"
+
+[node name="Spacer6" type="Control" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="TrophyButton" type="Button" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "🏆"
+
+[node name="Spacer7" type="Control" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="ShopButton" type="Button" parent="VBoxContainer/BottomNav"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "💰"

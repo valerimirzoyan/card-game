@@ -1,0 +1,38 @@
+[
+	{
+	  "title": "Elf",
+	  "image": "res://images/elf.jpg",
+	  "type": "elf",
+	  "description": "Strong melee fighters with high defense",
+	  "stats": {
+		"attack": 85,
+		"defense": 90,
+		"health": 120,
+		"speed": 60
+	  }
+	},
+	{
+	  "title": "Footballer",
+	  "image": "res://images/fotb.jpg", 
+	  "type": "sport",
+	  "description": "Powerful spellcasters with magical abilities",
+	  "stats": {
+		"attack": 95,
+		"defense": 45,
+		"health": 80,
+		"speed": 75
+	  }
+	},
+	{
+	  "title": "Dino",
+	  "image": "res://images/dino.jpg",
+	  "type": "animal", 
+	  "description": "Ranged fighters with high accuracy",
+	  "stats": {
+		"attack": 80,
+		"defense": 60,
+		"health": 90,
+		"speed": 95
+	  }
+	}
+  ]
